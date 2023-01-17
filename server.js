@@ -12,6 +12,7 @@ dotenv.config();
 connectDB();
 const app = express();
 const cors = require('cors')
+
 app.use(cors())
 
 
@@ -57,7 +58,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://ranjeev20.github.io/time-to-chat",
     // credentials: true,
   },
 });
